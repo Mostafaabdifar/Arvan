@@ -1,0 +1,83 @@
+.header {
+  background-color: $color-primary;
+  background-image: url(/img/general-header-bg.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  margin-bottom: 10rem;
+
+
+  &_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+  }
+
+  &__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    &__item {
+      list-style: none;
+      margin-right: 4rem;
+      @include fontStyle(YekanBakh, 3rem, 400);
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $color-white;
+    }
+  }
+
+  &__logo {
+    width: 6rem;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    &> a:not(:last-child) {
+      @include ctaStyle();
+    }
+
+    &--signup{
+      padding: .5rem 6rem;
+      border-radius: 4rem;
+      background-color: rgba(0, 0, 0, .2);
+    }
+
+    &--lang-icon{
+      width: 2.5rem;
+      margin-bottom: -.7rem;
+    }
+    &--call{
+      width:6rem;
+      margin-right:3rem;
+      padding: 1rem;
+      color: $color-white;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+  &__heading-section{
+    text-align: center;
+    margin: 3rem;
+    padding-bottom: 12rem;
+
+    &>h2{
+      @include fontStyle(YekanBakh,8rem,700);
+      text-shadow: .2rem .6rem $light-gray;
+      letter-spacing: .2rem;
+      color: $color-white;
+    }
+  }
+  
+
+
+
+}

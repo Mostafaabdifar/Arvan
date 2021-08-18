@@ -1,0 +1,115 @@
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/Yekan Bakh EN 04 Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/Yekan Bakh EN 05 Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../font/Yekan Bakh EN 06 Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../font/Yekan Bakh EN 06 Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/Yekan Bakh EN 07 Heavy.woff") format("woff"); }
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../font/Yekan Bakh EN 08 Fat.woff") format("woff"); }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.header {
+  background-color: #1fc5b9;
+  background-image: url(/img/general-header-bg.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  margin-bottom: 10rem; }
+  .header_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0; }
+  .header__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; }
+    .header__navbar__item {
+      list-style: none;
+      margin-right: 4rem;
+      font-family: YekanBakh;
+      font-size: 3rem;
+      font-weight: 400; }
+    .header__navbar__link {
+      text-decoration: none;
+      color: #FAFAFA; }
+  .header__logo {
+    width: 6rem; }
+  .header__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; }
+    .header__cta > a:not(:last-child) {
+      font-family: YekanBakh;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-right: 4rem;
+      color: #FAFAFA;
+      text-decoration: none; }
+    .header__cta--signup {
+      padding: .5rem 6rem;
+      border-radius: 4rem;
+      background-color: rgba(0, 0, 0, 0.2); }
+    .header__cta--lang-icon {
+      width: 2.5rem;
+      margin-bottom: -.7rem; }
+    .header__cta--call {
+      width: 6rem;
+      margin-right: 3rem;
+      padding: 1rem;
+      color: #FAFAFA;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.2); }
+  .header__heading-section {
+    text-align: center;
+    margin: 3rem;
+    padding-bottom: 12rem; }
+    .header__heading-section > h2 {
+      font-family: YekanBakh;
+      font-size: 8rem;
+      font-weight: 700;
+      text-shadow: 0.2rem 0.6rem #455A64;
+      letter-spacing: .2rem;
+      color: #FAFAFA; }
