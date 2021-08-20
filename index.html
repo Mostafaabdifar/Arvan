@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/acardeon.js" defer></script>
   <title>Arvan</title>
 </head>
 
@@ -14,7 +16,7 @@
     <div class="container">
       <nav class="header_nav">
         <ul class="header__navbar">
-          <img src="/img/logo.png" alt="Arvan" class="header__logo">
+          <img src="/img/Group 22.svg" alt="Arvan" class="header__logo">
           <li class="header__navbar__item"><a href="#" class="header__navbar__link">محصولات</a></li>
           <li class="header__navbar__item"><a href="#" class="header__navbar__link">بازارچه</a></li>
           <li class="header__navbar__item"><a href="#" class="header__navbar__link">مستندات</a></li>
@@ -24,9 +26,9 @@
         <div class="header__cta">
           <a href="#" class="header__cta--login">ورود</a>
           <a href="#" class="header__cta--signup">ثبت نام</a>
-          <a href="#" class="header__cta--lang">فارسی <img src="img/world.png" alt="Arvan persian"
+          <a href="#" class="header__cta--lang">فارسی <img src="img/download (1).svg" alt="Arvan persian"
               class="header__cta--lang-icon"></a></li></a>
-          <a href="#" class="header__cta--contact"><img src="/img/call.png" alt="Arvan call"
+          <a href="#" class="header__cta--contact"><img src="/img/Group 13814.svg" alt="Arvan call"
               class="header__cta--call"></a>
         </div>
       </nav>
@@ -43,10 +45,261 @@
         <h3>فهرست پروژه ها</h3>
         <p>با فهرست پروژ های در جریان ابر آروان بیشتر آشنا شوید </p>
       </div>
-      
+      <div class="project__tab">
+        <button class="project__tab--item" data-tab-target="#content2"><img src="img/Group 13808.svg" alt="active project"> پروژه های
+          فعال</button>
+        <button class="project__tab--item active" data-tab-target="#content1"><img src="img/Group 13812.svg" alt="progress project">در حال
+          ارزیابی</button>
+        <button class="project__tab--item" data-tab-target="#content3" ><img src="img/Group 13813.svg" alt="done project">پروژه های اجرا
+          شده</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="project__content active" data-tab-content id="content1">
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+              class="notice"><span>Wordpress</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+            class="notice"><span>Drupal Plugin</span></div>
+            <div class="project__content--item-icon">
+              <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+            </div>
+          </div>
+          <div class="project__content-main" >
+          <div class="container">
+          <div class="project__content-feature">
+            <section class="project__content-feature--widget">
+              <img class="icon" src="img/Group 13798.svg" alt="file-plus">
+              <h4>درخواست دهنده</h4>
+              <p>CDN تیم</p>
+            </section>
+            <section class="project__content-feature--widget">
+              <img src="img/Group 13797.svg" alt="file-plus" class="icon">
+              <h4>روش اجرا و ارائه</h4>
+              <p>Opensourse/Github</p>
+            </section>
+            <section class="project__content-feature--widget" >
+              <img src="img/Group 13796.svg" alt="file-plus" class="icon">
+              <h4>زبان پروژه</h4>
+              <p>Python</p>
+            </section>
+            <section class="project__content-feature--widget">
+              <img src="img/Group 13795.svg" alt="file-plus" class="icon">
+              <h4>مبلغ پروژه</h4>
+              <p>‏10,000,000 ریال</p>
+            </section>
+          </div>
+          <div class="project__content-details">
+            <div class="project__content-details--icon"><img src="img/Group 13801.svg" alt="edit" class="icon"></div>
+            <div class="project__content-details--paragraph">
+              <h4>شرح پروژه</h4>
+              <div class="note">
+              <img src="img/Ellipse 1410.svg" class="notice" alt="notice"  class="notice">
+              <p>نرم افزاری برای انتقال یک دامنه به همراه تنظیمات آن از روی کلودفلر به آروان</p></div>
+              <div class="note">
+              <img src="img/Ellipse 1410.svg" class="notice"  alt="notice" class="notice">
+              <p>یک دامنه را به همراه تنظیمات مربوطه از سرویس کلودفلر به آروان منتقل کند API Key این نرم افزار باید بتواند با دریافت</p></div>
+              <div class="note">
+              <img src="img/Ellipse 1410.svg" class="notice"  alt="notice" class="notice">
+              <p>حالت مطلوب میتواند یک وبسایت مستقل باشد و یا میتواند یک اسکریپتی که با دریافت اطلاعات مربوطه این کار را انجام دهد</p></div>
+            </div>
+          </div>
+          <div class="project__content-share">
+            <div class="project__content-share--right">
+              <img src="img/Group 13806.svg" alt="git hub" class="icon">
+            </div>
+            <div class="address">
+              <h4>صفحه گیت هاب</h4>
+              <p>https://github.com/features/codespaces</p>
+            </div>
+            <div class="project__content-share--left">
+              <img src="img/Group 13588.svg" alt="icon user">
+              <p>توسط حسن سیدی</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+              class="notice"><span>Migrate From CloudFlare to Arvan</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice" class="notice"><span>IP
+              WhiteList Script</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+              class="notice"><span>cPanel Quick Installation
+            </span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+              class="notice"><span>Dynamic DNS</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice" class="notice"><span>CLI
+              to work with CDN</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+      </div> 
+      <div class="project__content" data-tab-content id="content2">
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+              class="notice"><span>Wordpress</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+              class="notice"><span>Migrate From CloudFlare to Arvan</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice" class="notice"><span>IP
+              WhiteList Script</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+              class="notice"><span>cPanel Quick Installation
+            </span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+              class="notice"><span>Dynamic DNS</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice" class="notice"><span>CLI
+              to work with CDN</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+      </div>
+
+      <div class="project__content" data-tab-content id="content3">
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+              class="notice"><span>Wordpress</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+              class="notice"><span>Migrate From CloudFlare to Arvan</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice"
+              class="notice"><span>Dynamic DNS</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+        <hr>
+        <div class="project__content--item">
+          <div class="project__content--item-name"><img src="img/Ellipse 1410.svg" alt="notice" class="notice"><span>CLI
+              to work with CDN</span></div>
+          <div class="project__content--item-icon">
+            <img src="img/Group 13786.svg" class="change-icon" alt="checkbox">
+          </div>
+        </div>
+        <div class="project__acc-panel">
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+        </div>
+      </div>
     </div>
   </section>
-
 </body>
-
 </html>

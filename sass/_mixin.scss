@@ -1,11 +1,11 @@
-@mixin fontStyle($name,$size,$weight){
-  font-family: $name;
+@mixin fontStyle($size,$weight){
+  font-family: YekanBakh;
   font-size: $size;
   font-weight: $weight
 }
 @mixin ctaStyle {
-  @include fontStyle(YekanBakh, 3rem, 400);
-  margin-right: 4rem;
+  @include fontStyle(1.7rem, 400);
+  margin-right: 3rem;
   color: $color-white;
   text-decoration: none;
 }
