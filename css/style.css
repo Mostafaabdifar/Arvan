@@ -49,6 +49,18 @@ html {
   width: 80%;
   margin: 0 auto; }
 
+h3 {
+  font-family: YekanBakh;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0B3A42; }
+
+.secondary__heading {
+  font-family: YekanBakh;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #155A6D; }
+
 .header {
   background-color: #1fc5b9;
   background-image: url(/img/general-header-bg.svg);
@@ -136,16 +148,6 @@ html {
   .project__heading {
     text-align: center;
     margin-bottom: 3rem; }
-    .project__heading > h3 {
-      font-family: YekanBakh;
-      font-size: 3rem;
-      font-weight: 500;
-      color: #0B3A42; }
-    .project__heading > p {
-      font-family: YekanBakh;
-      font-size: 1.5rem;
-      font-weight: 400;
-      color: #155A6D; }
   .project__tab {
     width: 100%;
     height: auto; }
@@ -277,3 +279,86 @@ html {
         border: 0.1rem solid #455A64;
         margin-left: 3rem;
         border-radius: 1rem; }
+
+.session {
+  padding: 5rem 0;
+  background-color: #EEF2F7;
+  width: 100%; }
+  .session__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem; }
+    .session__header > h3 {
+      margin-right: 1rem;
+      margin-bottom: -2rem; }
+  .session__paragraph {
+    padding: 1rem 2rem; }
+  .session__tabs {
+    margin: 2rem 0;
+    position: relative; }
+    .session__tabs--line {
+      position: absolute;
+      width: 7rem;
+      height: .3rem;
+      left: 0;
+      bottom: -.5rem;
+      border-radius: 5rem;
+      transition: left 0.5s ease-in-out, width 0.5s 0.10s;
+      background-color: #20C5BA;
+      pointer-events: none; }
+    .session__tabs-navbar {
+      font-family: YekanBakh;
+      font-size: 1.7rem;
+      font-weight: 400;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .session__tabs-navbar-item {
+        list-style: none;
+        margin: 0 1rem; }
+        .session__tabs-navbar-item--link {
+          text-decoration: none;
+          color: #0B3A42; }
+  .session__tooltip {
+    display: none;
+    margin: 4rem 1rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 0.2rem solid #20C5BA;
+    border-radius: 2rem;
+    position: relative; }
+    .session__tooltip.active {
+      display: block; }
+    .session__tooltip::before, .session__tooltip::after {
+      content: "";
+      position: absolute;
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+      top: -1.2rem;
+      right: 4%; }
+    .session__tooltip::before {
+      border-bottom: 1rem solid #20C5BA;
+      margin-bottom: .5rem; }
+    .session__tooltip::after {
+      border-bottom: 1rem solid #ffffff;
+      margin-top: .2rem;
+      z-index: 1; }
+    .session__tooltip--header {
+      font-family: YekanBakh;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #0B3A42; }
+    .session__tooltip--paragraph {
+      font-family: YekanBakh;
+      font-size: 1.3rem;
+      font-weight: 400;
+      text-align: justify;
+      padding: .5rem;
+      margin-bottom: 1rem; }
+    .session__tooltip--status {
+      font-family: YekanBakh;
+      font-size: 1.3rem;
+      font-weight: 700;
+      padding-right: .5rem;
+      color: #20C5BA; }

@@ -1,0 +1,106 @@
+.session {
+  padding: 5rem 0;
+  background-color: $light-gray-3;
+  width: 100%;
+
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+
+    &>h3 {
+      margin-right: 1rem;
+      margin-bottom: -2rem;
+    }
+  }
+
+  &__paragraph {
+    padding: 1rem 2rem;
+  }
+
+  &__tabs {
+    margin: 2rem 0;
+    position: relative;
+
+
+    &--line {
+      position: absolute;
+      width: 7rem;
+      height: .3rem;
+      left: 0;
+      bottom: -.5rem;
+      border-radius: 5rem;
+      transition: left 0.5s ease-in-out, width 0.5s 0.10s;
+      background-color: $light-blue;
+      pointer-events: none;
+    }
+
+    &-navbar {
+      @include fontStyle(1.7rem, 400);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-item {
+        list-style: none;
+        margin: 0 1rem;
+
+        &--link {
+          text-decoration: none;
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+  &__tooltip {
+    display: none ;
+    margin: 4rem 1rem;
+    padding: 2rem;
+    background-color: $white;
+    border: .2rem solid $light-blue;
+    border-radius: 2rem;
+    position: relative;
+
+    &.active{
+      display: block;
+    }
+
+    &::before,
+    &::after{
+      content: "";
+      position: absolute;
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+      top: -1.2rem;
+      right: 4%;
+    }
+    &::before{
+      border-bottom: 1rem solid $light-blue;
+      margin-bottom: .5rem;
+    }
+    &::after{
+      border-bottom: 1rem solid $white;
+      margin-top:.2rem;
+      z-index: 1;
+    }
+
+    &--header {
+      @include fontStyle(2rem, 600);
+      color: $color-secondary;
+    }
+
+    &--paragraph {
+      @include fontStyle(1.3rem, 400);
+      text-align: justify;
+      padding: .5rem;
+      margin-bottom: 1rem
+    }
+
+    &--status {
+      @include fontStyle(1.3rem, 700);
+      padding-right: .5rem;
+      color: $light-blue;
+    }
+  }
+}

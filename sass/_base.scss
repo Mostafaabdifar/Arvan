@@ -14,3 +14,13 @@ html {
   width:80%;
   margin: 0 auto;
 }
+
+h3{
+  @include fontStyle(3rem, 500);
+  color: $color-secondary;
+}
+
+.secondary__heading{
+  @include fontStyle(1.5rem, 400);
+  color: $color-secondary-light;
+}

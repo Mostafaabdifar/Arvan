@@ -23,16 +23,6 @@
   &__heading {
     text-align: center;
     margin-bottom: 3rem;
-
-    &>h3 {
-      @include fontStyle(3rem, 500);
-      color: $color-secondary;
-    }
-
-    &>p {
-      @include fontStyle(1.5rem, 400);
-      color: $color-secondary-light;
-    }
   }
 
   &__tab {
