@@ -1,22 +1,7 @@
 const tabSession = document.querySelectorAll('.session__tabs-navbar-item');
 const toolTip = document.querySelectorAll('.session__tooltip');
 
-/// tooltips ///////
-
-tabSession.forEach(el => el.addEventListener('click', () => {
-  const target = document.querySelector(el.dataset.session);
-  toolTip.forEach((content) => {
-    content.classList.remove('active');
-  })
-  tabSession.forEach(element => {
-    element.classList.remove('active');
-  });
-
-  target.classList.add('active')
-}))
-
-
- /// tabs ////////
+/// tabs ////////
 
 function onTabClick(evt) {
   setLineStyle(evt.target);
@@ -38,3 +23,17 @@ window.onload = function () {
     };
   })
 }
+
+/// tooltips ///////
+
+tabSession.forEach(el => el.addEventListener('click', () => {
+  const target = document.querySelector(el.dataset.session);
+  toolTip.forEach((content) => {
+    content.classList.remove('active');
+  })
+  tabSession.forEach(element => {
+    element.classList.remove('active');
+  });
+
+  target.classList.add('active')
+}))

@@ -1,0 +1,318 @@
+.signUp {
+  background-color: $white;
+  padding: 6rem 0;
+  margin: 0 2rem;
+
+  &__header {
+    margin: 2rem .5rem;
+
+    &>h4 {
+      @include fontStyle(1.9rem, 600)
+    }
+
+    &>p {
+      @include fontStyle(1.5rem, 400)
+    }
+  }
+
+  &__forms {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $light-gray-2;
+    padding: 3rem 0;
+    border-radius: 2rem;
+
+
+
+    & input {
+      width: 80%;
+      padding: 1.5rem;
+      background-color: $white;
+      border: .1rem solid $light-gray-border;
+      border-radius: 1.5rem;
+      margin: 1rem 0;
+      overflow: hidden;
+      outline: none;
+
+      &::placeholder {
+        @include fontStyle(1.5rem, 400);
+        color: $light-gray-placeholder;
+        margin-right: 1rem
+      }
+    }
+
+    & label {
+      @include fontStyle(1.5rem, 500);
+      color: $gray-label;
+      margin: .7rem 0;
+
+      &>.required {
+        color: $light-blue;
+        margin-left: .5rem
+      }
+    }
+
+    &>span {
+      @include fontStyle(2rem, 400);
+      color: $color-secondary-light;
+      display: block;
+      margin-left: auto;
+      padding-bottom: 2rem;
+
+      &:before {
+        content: "";
+        margin-left: 1rem;
+        border-left: .4rem solid $light-blue;
+        border-radius: .3rem;
+      }
+    }
+
+    &-comment {
+      display: flex;
+    }
+
+    &-sign {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 2rem;
+      margin: .5rem 1rem;
+      width: 100%;
+
+      & >.area{
+        margin-left: 1.5rem;
+        margin-bottom: auto;
+        padding-top: 1.5rem
+      }
+      &>textarea{
+        @include fontStyle(1.5rem,500);
+        width: 90%;
+        outline: none;
+        border: .2rem solid $light-gray-border;
+        border-radius: 3rem;
+        padding: 1.5rem;
+        margin-top: 2rem;   
+        &::placeholder{
+          color:$light-gray-placeholder;
+        }
+      }
+      &>.submit{
+        width: 15%;
+        background-color:$light-gray-3 ;
+        padding: 1rem 3.5rem;
+        margin-top: 1rem;
+        margin-right: auto;
+        margin-left: 2.5rem;
+        cursor: pointer;
+        &:hover{
+          background-color: $hover-submit;
+          color: $white;
+        }
+        
+      }
+
+      & #phone::-webkit-outer-spin-button,
+      & #phone::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      & .move>input {
+        margin-right: 2rem;
+      }
+
+      & .moveleft>input {
+        margin-right: 1rem;
+
+      }
+
+      & .d-right {
+        margin-right: 1rem;
+      }
+
+      &-input {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+
+
+        &>.note {
+          @include fontStyle(1.5rem, 400);
+          display: block;
+          margin-top: 1rem;
+          color: $gray-label;
+        }
+
+        &--format {
+          border-radius: 1.5rem;
+          height: 6rem;
+          width: 80%;
+          background-color: $white;
+          border: .2rem solid $light-gray-border;
+          position: relative;
+
+          &:hover {
+            border: .2rem solid $light-blue;
+            color: $white;
+          }
+        }
+        &--filename {
+          position: relative;
+          @include fontStyle(1.5rem, 400);
+          color: $gray-label;
+          right: 1rem;
+          z-index: 2000;
+          
+
+          &#resume-file{
+            @include fontStyle(1.5rem,500);
+           margin: 1.5rem 1rem;
+           color:$light-blue ;
+
+          }
+          &#portfolio-file{
+            @include fontStyle(1.5rem,500);
+           margin: 1.5rem 1rem;
+           color:$light-blue ;
+          }
+
+          & .optional {
+            display: block;
+            margin: 1.7rem 0;
+            color: $light-gray-placeholder;
+          }
+        }
+
+        &--file {
+          opacity: 0;
+          width: 100% !important;
+          top: 0;
+          bottom: 0;
+          cursor: pointer;
+          position: absolute;
+          padding: 3rem !important;
+          margin-top: -.3rem !important;
+          z-index: 10000;
+        }
+
+        &--btn {
+          @include fontStyle(1.5rem, 700);
+          color: $gray-label;
+          background-color: $light-gray-3;
+          border: .2rem solid $light-gray-placeholder;
+          position: absolute;
+          top: -.2rem;
+          left: -.3rem;
+          padding: 1.6rem 2rem;
+          border-radius: 1.5rem;
+          z-index: 200;
+          cursor: pointer;
+          z-index: 80;
+        }
+
+        &--format:hover &--btn {
+          background-color: $light-blue;
+          border: .2rem solid $light-blue;
+          color: $white;
+        }
+        .warn-message{
+          border: .2rem solid red;
+          .signUp__forms-sign-input--btn{
+            border: .2rem solid red;
+          }
+        }
+
+        &--select {
+          @include fontStyle(1.6rem, 500);
+          width: 80%;
+          background-color: $light-gray-3;
+          padding: 2.5rem;
+          border-radius: 1.5rem;
+          margin-right: 2rem;
+          overflow: hidden;
+          outline: none;
+          cursor: pointer;
+          position: relative;
+
+          &::after {
+            content: "";
+            background: url("/img/Component 20 – 27.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 1rem;
+            width: 3rem;
+            position: absolute;
+            left: 2rem;
+            top: 2rem;
+          }
+
+        }
+
+        &>.select-box {
+          position: absolute;
+          top: 4rem;
+          bottom: -1.5rem;
+          min-height: 27rem;
+          background-color: $white;
+          border: .2rem solid $light-gray-border  ;
+          border-radius: 1.5rem;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          margin-right: 7rem;
+          margin-top: 1rem;
+          opacity: 0;
+          display: none;
+
+          &.active-select {
+            opacity: 1;
+            display: block;
+          }
+
+          & .radio {
+            display: none;
+          }
+
+          &>.option {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 1rem;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $light-gray-placeholder;
+              border-radius: 1.5rem;
+            }
+
+            &>label {
+              cursor: pointer;
+              margin-left: auto;
+              padding: .7rem;
+
+            }
+
+            &:hover label {
+              color: $light-blue;
+            }
+
+            &>label {
+              cursor: pointer;
+            }
+          }
+
+        }
+
+      }
+
+    }
+  }
+}

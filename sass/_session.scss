@@ -45,10 +45,11 @@
       &-item {
         list-style: none;
         margin: 0 1rem;
-
+        
         &--link {
           text-decoration: none;
           color: $color-secondary;
+          cursor: pointer;
         }
       }
     }
@@ -101,6 +102,8 @@
       @include fontStyle(1.3rem, 700);
       padding-right: .5rem;
       color: $light-blue;
+      
+
     }
   }
 }

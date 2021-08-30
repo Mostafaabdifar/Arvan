@@ -24,3 +24,21 @@ h3{
   @include fontStyle(1.5rem, 400);
   color: $color-secondary-light;
 }
+
+input {
+  @include fontStyle(1.5rem ,500);
+  width: 80%;
+  padding: 1.5rem;
+  background-color: $white;
+  border: .1rem solid $light-gray-border;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  outline: none;
+
+  &::placeholder {
+    @include fontStyle(1.5rem, 400);
+    color: $light-gray-placeholder;
+    margin-right: 1rem
+  }
+}
