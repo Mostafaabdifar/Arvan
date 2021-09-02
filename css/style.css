@@ -45,6 +45,18 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media screen and (max-width: 1200px) {
+    html {
+      font-size: 56.25%; } }
+  @media screen and (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 31.25%; } }
+  @media screen and (min-width: 1800px) {
+    html {
+      font-size: 75%; } }
 
 .container {
   width: 80%;
@@ -123,6 +135,8 @@ input {
       padding: .5rem 3rem;
       border-radius: 4rem;
       background-color: rgba(0, 0, 0, 0.2); }
+      .header__cta--signup:hover {
+        background-color: rgba(65, 62, 62, 0.8); }
     .header__cta--lang-icon {
       width: 2.5rem;
       margin-bottom: -1rem;
@@ -134,6 +148,8 @@ input {
       color: #FAFAFA;
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.2); }
+      .header__cta--call:hover {
+        background-color: rgba(65, 62, 62, 0.8); }
   .header__heading-section {
     text-align: center;
     margin: 3rem 3rem 0 3rem;
@@ -656,7 +672,8 @@ input {
     padding: 1rem 2rem;
     background-color: transparent;
     border: 0.2rem solid #20C5BA;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    cursor: pointer; }
     .favorite__button:hover {
       background-color: #20C5BA;
       color: #ffffff; }
@@ -689,3 +706,31 @@ input {
       padding: .5rem;
       color: #20C5BA;
       cursor: pointer; }
+
+.footer {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  margin-bottom: 2rem; }
+  .footer__carousel {
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__carousel-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-grow: 1; }
+    .footer__carousel-item {
+      cursor: pointer; }
+      .footer__carousel-item:hover {
+        filter: invert(50%) sepia(25%) saturate(2053%) hue-rotate(128deg) brightness(98%) contrast(101%); }
+    .footer__carousel-button > i {
+      padding: 1.2rem 1.5rem;
+      color: #ffffff;
+      background-color: #DBE4F2;
+      border-radius: 50%;
+      font-size: 2rem;
+      cursor: pointer; }
+      .footer__carousel-button > i:hover {
+        background-color: #20C5BA; }

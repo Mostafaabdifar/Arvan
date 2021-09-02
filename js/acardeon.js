@@ -6,9 +6,12 @@ for (let i = 0; i < acc.length; i++) {
     const panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
+      icon[i].src ="../img/Group 13786.svg";
     } else {
+      icon[i].src ="../img/Group 13788.svg";
       panel.style.display = "block";
       panel.classList.add('project__content-main');
     }
   })
 }
+

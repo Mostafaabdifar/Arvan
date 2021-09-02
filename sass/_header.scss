@@ -48,6 +48,10 @@
       padding: .5rem 3rem;
       border-radius: 4rem;
       background-color: rgba(0, 0, 0, .2);
+      &:hover{
+      background-color: rgba(65, 62, 62, 0.8);
+
+      }
     }
 
     &--lang-icon {
@@ -63,6 +67,10 @@
       color: $color-white;
       border-radius: 50%;
       background-color: rgba(0, 0, 0, .2);
+      &:hover{
+      background-color: rgba(65, 62, 62, 0.8);
+
+      }
     }
   }
 

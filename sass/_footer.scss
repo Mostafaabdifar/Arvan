@@ -1,0 +1,39 @@
+.footer{
+  padding: 4rem 1rem;
+  background-color:$white;
+  margin-bottom: 2rem;
+
+  &__carousel{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &-content{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-grow: 1;
+    }
+    &-item{
+      cursor: pointer;
+      &:hover{
+        filter: invert(50%) sepia(25%) saturate(2053%) hue-rotate(128deg) brightness(98%) contrast(101%);
+      }
+    }
+    &-button>i{
+      padding: 1.2rem 1.5rem;
+      color: $white;
+      background-color:$light-gray-border;
+      border-radius: 50%;
+      font-size: 2rem;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $light-blue;
+      }
+    }
+  }
+
+}
+
