@@ -23,6 +23,16 @@ html {
   @include respond(phone) {
     // width < 600
     font-size: 31.25%; // 1rem = 5px, 5/16 = 31.25%
+
+    .change-icon{
+      width: 3rem;
+    }
+    .notice{
+      display: none;
+    }
+    hr{
+      display: none;
+    }
   }
 
   @include respond(big-desktop) {

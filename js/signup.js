@@ -69,3 +69,28 @@ inputPortfolio.onchange = function (event) {
   }
 
 }
+
+///condition///
+
+let inputForm = document.querySelectorAll('.input_form');
+let drop = document.querySelectorAll('.drop_form')
+let singUpButton = document.querySelector('.signUp__button');
+console.log(inputForm,drop)
+inputForm.onchange = function(){
+
+}
+
+
+
+// console.log(inputForm);
+// if (inputForm.values !== "") {
+//   singUpButton.style.backgroundColor = "red";
+// } else {
+//   singUpButton.style.backgroundColor = "";
+
+// }
+// // inputForm.forEach(el => function(){
+//   if(singUp.value.length>0){
+//     singUpButton.style.backgroundColor = "red";
+//   }
+// // })

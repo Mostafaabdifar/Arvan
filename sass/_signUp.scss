@@ -3,11 +3,19 @@
   padding: 10rem 0;
   margin: 0 2rem;
 
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+
   &__header {
     margin: 2rem .5rem;
 
     &>h4 {
-      @include fontStyle(1.9rem, 600)
+      @include fontStyle(1.9rem, 600);
+
+      @include respond(phone) {
+        @include fontStyle(3rem, 600);
+      }
     }
 
     &>p {
@@ -15,19 +23,28 @@
     }
   }
 
-  &__button{
-    @include fontStyle(1.5rem,500);
+  &__button {
+    @include fontStyle(1.5rem, 500);
     float: left;
     width: 15%;
     height: 5%;
     color: $gray-label;
-    background-color:$light-gray-3 ;
+    background-color: $light-gray-3;
     border: none;
     border-radius: 2rem;
     padding: 1rem 2rem;
-    margin:.5rem ;
+    margin: .5rem;
     cursor: pointer;
-    &:hover{
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+    @include respond(phone) {
+      width: 100%;
+      margin-top: -2rem;
+    }
+
+    &:hover {
       background-color: $hover-submit;
       color: $white;
     }
@@ -43,11 +60,15 @@
     padding: 3rem 0;
     border-radius: 2rem;
 
+    @include respond(phone) {
+      background-color: $white;
+    }
+
 
 
     & input {
       width: 80%;
-      padding: 1.5rem;
+      padding: 1.5rem 4.5rem;
       background-color: $white;
       border: .1rem solid $light-gray-border;
       border-radius: 1.5rem;
@@ -55,10 +76,20 @@
       overflow: hidden;
       outline: none;
 
+      @include respond(phone) {
+        width: 100%;
+      }
+
+
       &::placeholder {
         @include fontStyle(1.5rem, 400);
         color: $light-gray-placeholder;
-        margin-right: 1rem
+        margin-right: 1rem;
+
+        @include respond(phone) {
+          visibility: hidden
+        }
+
       }
     }
 
@@ -66,6 +97,13 @@
       @include fontStyle(1.5rem, 500);
       color: $gray-label;
       margin: .7rem 0;
+
+      @include respond(phone) {
+        position: absolute;
+        right: 2rem;
+        top: 1rem;
+        z-index: 1000;
+      }
 
       &>.required {
         color: $light-blue;
@@ -83,8 +121,8 @@
       &:before {
         content: "";
         margin-left: 1rem;
-        border-left: .4rem solid $light-blue;
-        border-radius: .3rem;
+        border-left: .5rem solid $light-blue;
+        border-radius: 1rem;
       }
     }
 
@@ -101,27 +139,40 @@
       margin: .5rem 1rem;
       width: 100%;
 
-      & >.area{
+      @include respond(phone) {
+        padding: 0;
+        justify-content: flex-start;
+      }
+
+      &>.area {
         margin-left: 1.5rem;
         margin-bottom: auto;
-        padding-top: 1.5rem
+        padding-top: 1.5rem;
+
+        @include respond(phone) {
+          display: none;
+        }
       }
-      &>textarea{
-        @include fontStyle(1.5rem,500);
+
+      &>textarea {
+        @include fontStyle(1.5rem, 500);
         width: 90%;
         outline: none;
         border: .2rem solid $light-gray-border;
         border-radius: 3rem;
         padding: 1.5rem;
-        margin-top: 2rem;   
-        &::placeholder{
-          color:$light-gray-placeholder;
+        margin-top: 2rem;
+
+        @include respond(phone) {
+          width: 100%;
+        }
+
+        &::placeholder {
+          color: $light-gray-placeholder;
         }
       }
-      &>.submit{
- 
-        
-      }
+
+      &>.submit {}
 
       & #phone::-webkit-outer-spin-button,
       & #phone::-webkit-inner-spin-button {
@@ -131,10 +182,18 @@
 
       & .move>input {
         margin-right: 2rem;
+
+        @include respond(phone) {
+          margin-right: 0;
+        }
       }
 
       & .moveleft>input {
         margin-right: 1rem;
+
+        @include respond(phone) {
+          margin-right: 0;
+        }
 
       }
 
@@ -150,12 +209,20 @@
         flex-wrap: wrap;
         position: relative;
 
+        @include respond(phone) {
+          width: 100%;
+        }
+
 
         &>.note {
           @include fontStyle(1.5rem, 400);
           display: block;
           margin-top: 1rem;
           color: $gray-label;
+
+          @include respond(phone) {
+            margin: 1rem auto;
+          }
         }
 
         &--format {
@@ -166,29 +233,39 @@
           border: .2rem solid $light-gray-border;
           position: relative;
 
+          @include respond(phone) {
+            width: 100%;
+          }
+
           &:hover {
             border: .2rem solid $light-blue;
             color: $white;
           }
         }
+
         &--filename {
           position: relative;
           @include fontStyle(1.5rem, 400);
           color: $gray-label;
           right: 1rem;
           z-index: 2000;
-          
 
-          &#resume-file{
-            @include fontStyle(1.5rem,500);
-           margin: 1.5rem 1rem;
-           color:$light-blue ;
+          @include respond(phone) {
+            padding-right: 4rem;
+          }
+
+
+          &#resume-file {
+            @include fontStyle(1.5rem, 500);
+            margin: 1.5rem 1rem;
+            color: $light-blue;
 
           }
-          &#portfolio-file{
-            @include fontStyle(1.5rem,500);
-           margin: 1.5rem 1rem;
-           color:$light-blue ;
+
+          &#portfolio-file {
+            @include fontStyle(1.5rem, 500);
+            margin: 1.5rem 1rem;
+            color: $light-blue;
           }
 
           & .optional {
@@ -230,9 +307,11 @@
           border: .2rem solid $light-blue;
           color: $white;
         }
-        .warn-message{
+
+        .warn-message {
           border: .2rem solid red;
-          .signUp__forms-sign-input--btn{
+
+          .signUp__forms-sign-input--btn {
             border: .2rem solid red;
           }
         }
@@ -248,6 +327,13 @@
           outline: none;
           cursor: pointer;
           position: relative;
+
+          @include respond(phone) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 1.5rem;
+            padding-right: 9rem;
+          }
 
           &::after {
             content: "";
@@ -269,16 +355,21 @@
           bottom: -1.5rem;
           min-height: 27rem;
           background-color: $white;
-          border: .2rem solid $light-gray-border  ;
+          border: .2rem solid $light-gray-border;
           border-radius: 1.5rem;
           padding: 1rem;
-          display: flex;
-          flex-direction: column;
+
           width: 80%;
           margin-right: 7rem;
           margin-top: 1rem;
           opacity: 0;
           display: none;
+          z-index: 2000;
+
+          @include respond(phone) {
+            width: 100%;
+            margin-right: 0;
+          }
 
           &.active-select {
             opacity: 1;
@@ -296,6 +387,10 @@
             padding: 0 1rem;
             cursor: pointer;
 
+            @include respond(phone) {
+              flex-direction: column;
+            }
+
             &:hover {
               background-color: $light-gray-placeholder;
               border-radius: 1.5rem;
@@ -311,16 +406,9 @@
             &:hover label {
               color: $light-blue;
             }
-
-            &>label {
-              cursor: pointer;
-            }
           }
-
         }
-
       }
-
     }
   }
 }

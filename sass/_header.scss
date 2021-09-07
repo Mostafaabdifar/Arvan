@@ -5,6 +5,10 @@
   background-repeat: repeat-x;
 
 
+  @include respond(phone) {
+    display: none;
+  }
+
   &_nav {
     display: flex;
     justify-content: center;
@@ -22,6 +26,10 @@
       list-style: none;
       margin-left: 3rem;
       @include fontStyle(1.7rem, 400);
+
+      @include respond(tab-port) {
+        @include fontStyle(1.5rem, 400);
+      }
     }
 
     &__link {
@@ -32,6 +40,12 @@
 
   &__logo {
     width: 5rem;
+    margin: 0 1.5rem;
+
+    @include respond(tab-port) {
+      width: 4rem;
+      
+    }
   }
 
   &__cta {
@@ -48,9 +62,14 @@
       padding: .5rem 3rem;
       border-radius: 4rem;
       background-color: rgba(0, 0, 0, .2);
-      &:hover{
-      background-color: rgba(65, 62, 62, 0.8);
 
+      &:hover {
+        background-color: rgba(65, 62, 62, 0.8);
+
+      }
+
+      @include respond(tab-port) {
+        padding: .5rem 4rem;
       }
     }
 
@@ -58,6 +77,10 @@
       width: 2.5rem;
       margin-bottom: -1rem;
       margin-right: .5rem;
+
+      @include respond(tab-port) {
+        width: 2rem;
+      }
     }
 
     &--call {
@@ -67,8 +90,9 @@
       color: $color-white;
       border-radius: 50%;
       background-color: rgba(0, 0, 0, .2);
-      &:hover{
-      background-color: rgba(65, 62, 62, 0.8);
+
+      &:hover {
+        background-color: rgba(65, 62, 62, 0.8);
 
       }
     }

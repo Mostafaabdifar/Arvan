@@ -1,4 +1,4 @@
-const button = document.querySelectorAll('.project__tab--item');
+const button = document.querySelectorAll('.project__tab--link');
 const tabContent = document.querySelectorAll('[data-tab-content]');
 
 button.forEach(btn => {
