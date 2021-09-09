@@ -3,6 +3,12 @@
   padding: 10rem 0;
   margin: 0 2rem;
 
+  #result{
+    @include fontStyle(1.5rem,500);
+    color: red;
+    margin-right: 1rem;
+  }
+
   @include respond(phone) {
     padding: 5rem 0;
   }
@@ -68,7 +74,7 @@
 
     & input {
       width: 80%;
-      padding: 1.5rem 4.5rem;
+      padding: 1.5rem 2rem;
       background-color: $white;
       border: .1rem solid $light-gray-border;
       border-radius: 1.5rem;
@@ -78,6 +84,7 @@
 
       @include respond(phone) {
         width: 100%;
+        padding: 1.5rem 4.5rem;
       }
 
 
@@ -346,7 +353,6 @@
             left: 2rem;
             top: 2rem;
           }
-
         }
 
         &>.select-box {
@@ -358,7 +364,6 @@
           border: .2rem solid $light-gray-border;
           border-radius: 1.5rem;
           padding: 1rem;
-
           width: 80%;
           margin-right: 7rem;
           margin-top: 1rem;

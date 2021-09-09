@@ -79,18 +79,70 @@ console.log(inputForm,drop)
 inputForm.onchange = function(){
 
 }
-
-
-
 // console.log(inputForm);
 // if (inputForm.values !== "") {
-//   singUpButton.style.backgroundColor = "red";
-// } else {
 //   singUpButton.style.backgroundColor = "";
+// } else {
+//   singUpButton.style.backgroundColor = "red";
 
 // }
 // // inputForm.forEach(el => function(){
 //   if(singUp.value.length>0){
 //     singUpButton.style.backgroundColor = "red";
 //   }
-// // })
+
+
+
+/// api section ///
+
+let fullName = document.getElementById('name');
+let phone =  document.getElementById('phone');
+let email = document.getElementById('email');
+let company = document.getElementById('company');
+let resume = document.getElementById('resume');
+let portfolio = document.getElementById('portfolio');
+let result = document.getElementById('result');
+
+
+document.querySelector('.signUp__button').addEventListener('click', ()=>{
+  if(fullName.value !== "" && phone.value !== "" && email.value !== "" && company.value !== "" && resume.value !== "" && portfolio.value !== ""){
+    result.innerHTML = "";
+    return
+  }else{
+    result.innerHTML = "لطفا فیلد های ستاره دار را پر کنید";
+  }
+
+let header = new Headers();
+header.append("Authorization", "Bearer 0aad8432-bd4b-4e21-bb5c-3ab892d210f2");
+header.append("Content-Type", "text/plain");
+header.append("Cookie", "show_cookie_banner=false; user_consent=eyJhbmFseXRpY3NBbGxvd2VkIjp0cnVlLCJhZHZlcnRpc2luZ0FsbG93ZWQiOnRydWUsInB1Ymxpc2hlckFuYWx5dGljc0FsbG93ZWQiOnRydWV9");
+header.append("Access-Control-Allow-Origin", "*")
+
+const url = "https://coda.io/d/table_dRWRoT8zYI-";
+
+const data = {
+  name:fullName,
+  phone:phone,
+  email:email,
+  company:company,
+  resume:resume,
+  portfolio:portfolio,
+  type:type,
+  level:level
+}
+
+let requestOption = {
+  method: 'POST',
+  header: header,
+  body:data,
+  redirect: 'follow'
+};
+
+fetch(url,requestOption)
+.then(response => response.text())
+.then(result => console.log(result))
+.catch(error => alert(error))
+
+})
+
+

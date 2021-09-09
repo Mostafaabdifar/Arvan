@@ -605,6 +605,12 @@ input {
   background-color: #ffffff;
   padding: 10rem 0;
   margin: 0 2rem; }
+  .signUp #result {
+    font-family: YekanBakh;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: red;
+    margin-right: 1rem; }
   @media screen and (max-width: 600px) {
     .signUp {
       padding: 5rem 0; } }
@@ -661,7 +667,7 @@ input {
         background-color: #ffffff; } }
     .signUp__forms input {
       width: 80%;
-      padding: 1.5rem 4.5rem;
+      padding: 1.5rem 2rem;
       background-color: #ffffff;
       border: 0.1rem solid #DBE4F2;
       border-radius: 1.5rem;
@@ -670,7 +676,8 @@ input {
       outline: none; }
       @media screen and (max-width: 600px) {
         .signUp__forms input {
-          width: 100%; } }
+          width: 100%;
+          padding: 1.5rem 4.5rem; } }
       .signUp__forms input::placeholder {
         font-family: YekanBakh;
         font-size: 1.5rem;
